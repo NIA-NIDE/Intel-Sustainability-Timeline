@@ -145,3 +145,19 @@ a {
 } 
 
 a:hover { color: white; }
+
+/* Making it device friendly*/
+
+@media (max-width: 600px){ 
+.container {
+    flex-wrap: wrap;          /* allow cards to go to next line */
+    overflow-x: hidden;       /* stop sideways scrolling */
+    max-width: 100%;          /* full width on small screens */
+    justify-content: center;  /* center the cards */
+  }
+
+  .Timeline {
+    width: 90%;               /* make cards fit nicely on mobile */
+    flex: 0 0 90%;
+  }
+}
